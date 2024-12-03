@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Nykaa Financial Performance Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <div id="wrapper">
+
+        <header id="header">
+            <a href="index.html" class="logo">Sagar Aggarwal</a>
+        </header>
+
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Projects</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+
+            <section class="post">
+                <header class="major">
+                    <h2>Nykaa Financial Performance Dashboard</h2>
+                </header>
+
+                <p>
+                    This Power BI dashboard provides a comprehensive and interactive analysis of Nykaa's (FSN E-Commerce Ventures) financial performance, covering multiple time horizons (yearly, half-yearly, quarterly, nine-monthly). It aims to provide insights into Nykaa's key financial metrics, including revenue, profitability, expenses, cash flow, and financial ratios, to help users understand the company's financial health and make informed decisions.
+                </p>
+
+                <h3>Technical Details</h3>
+                <ul>
+                    <li><b>Data Sources:</b> Financial data was extracted from MoneyControl using Python and the pandas library, then cleaned and processed for analysis of PDF format containing Consolidated financial reports, yearly, half-yearly, quarterly, and nine-monthly data for key financial statements (Balance Sheet, Profit & Loss, Cash Flow, and Financial Ratios).</li>
+                    <li><b>Data Transformation:</b> Power Query was used to clean, transform, and prepare the data for analysis.</li>
+                    <li><b>Data Modeling:</b> A star schema data model was created in Power BI Desktop, with relationships established between the fact table (cleaned_yearly) and various dimension tables.</li>
+                    <div class="image main">
+                        <img src="images/Data Modelling of Nykaa.png" alt="Data Modelling of Nykaa">
+                        <p>Star schema data model for Nykaa Financial Performance Dashboard.</p>
+                    </div>
+                    <li><b>DAX Measures:</b> Numerous DAX measures were created to calculate key performance indicators (KPIs), ratios, and trends.</li>
+                    <li><b>Report Design:</b> The Z-pattern layout was used to structure the reports, guiding user attention and creating a clear visual hierarchy.</li>
+                </ul>
+
+                <h3>Visualizations</h3>
+                <p>A variety of visualizations were used to effectively communicate insights:</p>
+                <ul>
+                    <li><b>Cards:</b> Used to display key KPIs like revenue, profit, and EPS.</li>
+                    <li><b>Gauge Charts:</b> Used to visualize profit margin, debt-to-equity ratio, and other key ratios.</li>
+                    <li><b>Line Charts:</b> Used to show trends in revenue, expenses, and ratios over time.</li>
+                    <li><b>Column Charts:</b> Used to compare performance across different periods or categories.</li>
+                    <li><b>Stacked Column Charts:</b> Used to visualize the composition of revenue and expenses.</li>
+                    <li><b>Waterfall Charts:</b> Used to illustrate cash flow movements.</li>
+                    <li><b>Treemaps:</b> Used to show the breakdown of assets.</li>
+                    <li><b>Pie Charts:</b> Used to display the composition of liabilities.</li>
+                    <li><b>Scatter Plots:</b> Used to explore the relationship between different financial ratios.</li>
+                    <li><b>Tables:</b> Used to display detailed financial data.</li>
+                    <li><b>Slicers:</b> Used to enable interactive filtering of data by year, quarter, etc.</li>
+                    <li><b>Tooltips:</b> Advanced tooltips were implemented, including report page tooltips and conditional formatting, to provide more context and insights.</li>
+                </ul>
+
+                <div class="image main">
+                    <img src="images/yearly.png" alt="Nykaa Yearly Report">
+                    <p>Based on the Nykaa Yearly Report, here are some key conclusions and insights you can include in your report summary:</p>
+                    <h4>Revenue Growth</h4>
+                    <ul>
+                        <li>Nykaa has demonstrated strong revenue growth over the past few years.</li>
+                        <li>"Net Sales/Income from operations" has increased from Rs. 1,765.33 crore in Mar '20 to Rs. 6,385.63 crore in Mar '24.</li>
+                    </ul>
+                    <h4>Profitability</h4>
+                    <ul>
+                        <li>The company's profitability has also shown improvement, with "Net Profit/(Loss) For the Period" increasing from a loss of Rs. 16.34 crore in Mar '20 to a profit of Rs. 43.72 crore in Mar '24.</li>
+                        <li>The "Basic EPS" has also increased significantly, from -0.39 in Mar '20 to 0.11 in Mar '24.</li>
+                    </ul>
+                    <h4>Key Expenses</h4>
+                    <ul>
+                        <li>The major expenses for Nykaa include "Consumption of Raw Materials," "Purchase of Traded Goods," and "Employees Cost."</li>
+                        <li>While these expenses have increased in absolute terms, they have generally remained stable or decreased as a percentage of revenue, indicating efficient expense management.</li>
+                    </ul>
+                    <h4>Other Observations</h4>
+                    <ul>
+                        <li>Nykaa has consistently generated "Other Income," which contributes to its overall profitability.</li>
+                        <li>The company has utilized both borrowings and equity for its financing needs.</li>
+                        <li>The "Net P/L After M.I & Associates" has also shown a positive trend, increasing from a loss of Rs. 16.61 crore in Mar '20 to a profit of Rs. 32.27 crore in Mar '24.</li>
+                    </ul>
+                    <p>These conclusions highlight Nykaa's strong financial performance, marked by consistent revenue growth, improving profitability, and efficient expense management.</p>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Half-Yearly.png" alt="Nykaa Half-Yearly Report">
+                    <p>Based on the Nykaa Half-Yearly Report, here are some key conclusions and insights you can include in your report summary:</p>
+                    <h4>Revenue and Profitability</h4>
+                    <ul>
+                        <li>Nykaa has demonstrated strong revenue growth over the past few half-yearly periods.</li>
+                        <li>"Net Sales/Income from operations" has increased from Rs. 2,071.68 crore in Mar '22 to Rs. 3,456.78 crore in Mar '24.</li>
+                        <li>The company's profitability has also shown improvement, with "Net Profit/(Loss) For the Period" increasing from Rs. 36.59 crore in Mar '22 to Rs. 27.97 crore in Mar '24.</li>
+                    </ul>
+                    <h4>Key Expenses</h4>
+                    <ul>
+                        <li>The major expenses for Nykaa include "Consumption of Raw Materials," "Purchase of Traded Goods," and "Employees Cost."</li>
+                        <li>While these expenses have increased in absolute terms, they have generally remained stable or decreased as a percentage of revenue, indicating efficient expense management.</li>
+                    </ul>
+                    <h4>Other Observations</h4>
+                    <ul>
+                        <li>Nykaa has consistently generated "Other Income," which contributes to its overall profitability.</li>
+                        <li>The company has utilized both borrowings and equity for its financing needs.</li>
+                    </ul>
+                    <p>These conclusions highlight Nykaa's strong financial performance, marked by consistent revenue growth, improving profitability, and efficient expense management.</p>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Quarterly.png" alt="Nykaa Quarterly Report">
+                    <p>Based on the Nykaa Quarterly Report, here are some key conclusions and insights you can include in your report summary:</p>
+                    <h4>Revenue and Profitability</h4>
+                    <ul>
+                        <li>Nykaa has demonstrated strong revenue growth over the past few quarterly periods.</li>
+                        <li>"Net Sales/Income from operations" has increased from Rs. 1,421.82 crore in Jun '23 to Rs. 1,746.11 crore in Jun '24.</li>
+                        <li>The company's profitability has also shown improvement, with "Net Profit/(Loss) For the Period" increasing from Rs. 6.46 crore in Jun '23 to Rs. 14.24 crore in Jun '24.</li>
+                    </ul>
+                    <h4>Key Expenses</h4>
+                    <ul>
+                        <li>The major expenses for Nykaa include "Consumption of Raw Materials," "Purchase of Traded Goods," and "Employees Cost."</li>
+                        <li>While these expenses have increased in absolute terms, they have generally remained stable or decreased as a percentage of revenue, indicating efficient expense management.</li>
+                    </ul>
+                    <h4>Other Observations</h4>
+                    <ul>
+                        <li>Nykaa has consistently generated "Other Income," which contributes to its overall profitability.</li>
+                        <li>The company has utilized both borrowings and equity for its financing needs.</li>
+                    </ul>
+                    <p>These conclusions highlight Nykaa's strong financial performance, marked by consistent revenue growth, improving profitability, and efficient expense management.</p>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Nine_Monthly.png" alt="Nykaa Nine-Monthly Report">
+                    <p>Based on the Nykaa Nine-Monthly Report, here are some key conclusions and insights you can include in your report summary:</p>
+                    <h4>Revenue and Profitability</h4>
+                    <ul>
+                        <li>Nykaa has demonstrated strong revenue growth over the past few nine-monthly periods.</li>
+                        <li>"Net Sales/Income from operations" has increased from Rs. 2,800.62 crore in Dec '21 to Rs. 4,717.65 crore in Dec '23.</li>
+                        <li>The company's profitability has also shown improvement, with "Net Profit/(Loss) For the Period" increasing from Rs. 33.71 crore in Dec '21 to Rs. 33.98 crore in Dec '23.</li>
+                    </ul>
+                    <h4>Key Expenses</h4>
+                    <ul>
+                        <li>The major expenses for Nykaa include "Consumption of Raw Materials," "Purchase of Traded Goods," and "Employees Cost."</li>
+                        <li>While these expenses have increased in absolute terms, they have generally remained stable or decreased as a percentage of revenue, indicating efficient expense management.</li>
+                    </ul>
+                    <h4>Other Observations</h4>
+                    <ul>
+                        <li>Nykaa has consistently generated "Other Income," which contributes to its overall profitability.</li>
+                        <li>The company has utilized both borrowings and equity for its financing needs.</li>
+                    </ul>
+                    <p>These conclusions highlight Nykaa's strong financial performance, marked by consistent revenue growth, improving profitability, and efficient expense management.</p>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Cashflow.png" alt="Nykaa Cashflow Report">
+                    <p>Based on the Nykaa Cashflow Report, here are some key conclusions and insights you can include in your report summary:</p>
+                    <h4>Cash Flow from Operating Activities</h4>
+                    <ul>
+                        <li>Nykaa has generated positive cash flow from operating activities in most years, indicating that its core operations are profitable.</li>
+                        <li>However, there was a significant negative cash flow from operating activities in Mar '23, which requires further investigation.</li>
+                    </ul>
+                    <h4>Cash Flow from Investing Activities</h4>
+                    <ul>
+                        <li>Nykaa has consistently used cash in investing activities, indicating that the company is investing in its growth and expansion.</li>
+                        <li>While these expenses have increased in absolute terms, they have generally remained stable or decreased as a percentage of revenue, indicating efficient expense management.</li>
+                    </ul>
+                    <h4>Cash Flow from Financing Activities</h4>
+                    <ul>
+                        <li>Nykaa has raised capital through financing activities in most years, indicating that the company is utilizing both debt and equity financing.</li>
+                    </ul>
+                    <h4>Net Change in Cash and Cash Equivalents</h4>
+                    <ul>
+                        <li>The company's net change in cash and cash equivalents has fluctuated over the years, with both positive and negative changes.</li>
+                        <li>The most significant increase in cash and cash equivalents occurred in Mar '20, while the most significant decrease occurred in Mar '23.</li>
+                    </ul>
+                    <p>These conclusions highlight the dynamic nature of Nykaa's cash flows, reflecting its investments in growth, financing strategies, and the fluctuations in its operating cash flows.</p>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Profit&Loss.png" alt="Nykaa Profit & Loss Report">
+                    <p>Based on the Profit & Loss Report, here are some key conclusions and insights you can include in your report summary:</p>
+                    <h4>Revenue and Profitability</h4>
+                    <ul>
+                        <li>Nykaa has demonstrated strong revenue growth over the past few years.</li>
+                        <li>"Revenue From Operations [Gross]" has increased from Rs. 1,765.33 crore in Mar '20 to Rs. 6,340.02 crore in Mar '24.</li>
+                        <li>The company's profitability has also shown improvement, with "Profit/Loss For The Period" increasing from a loss of Rs. 16.34 crore in Mar'20 to a profit of Rs. 43.72 crore in Mar'24.</li>
+                    </ul>
+                    <h4>Key Expenses</h4>
+                    <ul>
+                        <li>The major expenses for Nykaa include "Consumption of Raw Materials," "Purchase Of Stock-In Trade," and "Employee Benefit Expenses."</li>
+                        <li>While these expenses have increased in absolute terms, they have generally remained stable or decreased as a percentage of revenue, indicating efficient expense management.</li>
+                    </ul>
+                    <h4>Other Observations</h4>
+                    <ul>
+                        <li>Nykaa has consistently generated "Other Income," which contributes to its overall profitability.</li>
+                        <li>The company has utilized both borrowings and equity for its financing needs.</li>
+                    </ul>
+                    <p>These conclusions highlight Nykaa's strong financial performance, marked by consistent revenue growth, improving profitability, and efficient expense management.</p>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Balance-Sheet.png" alt="Nykaa Balance Sheet Report">
+                    <p>Based on the Balance Sheet Report, here are some key conclusions and insights you can include in your report summary:</p>
+                    <h4>Assets</h4>
+                    <ul>
+                        <li>Nykaa's total assets have grown significantly from 2020 to 2024, indicating an expansion of the company's resources and operations.</li>
+                        <li>The company's "Tangible Assets" have increased from Rs. 214.14 crore in Mar '20 to Rs. 496.63 crore in Mar '24.</li>
+                        <li>"Non-Current Investments" have increased from Rs. 3.80 crore in Mar '20 to Rs. 34.31 crore in Mar '24.</li>
+                    </ul>
+                    <h4>Liabilities</h4>
+                    <ul>
+                        <li>Nykaa's total capital and liabilities have grown from 2020 to 2024, reflecting the company's increased financial obligations.</li>
+                        <li>The company's "Equity Share Capital" has increased from Rs. 14.55 crore in Mar '20 to Rs. 285.60 crore in Mar '24.</li>
+                        <li>"Other Long Term Liabilities" have increased from Rs. 130.26 crore in Mar '20 to Rs. 230.49 crore in Mar '24.</li>
+                    </ul>
+                    <h4>Other Observations</h4>
+                    <ul>
+                        <li>Nykaa has utilized both borrowings and equity for its financing needs.</li>
+                        <li>The company's "Contingent Liabilities" have increased from Rs. 31.60 crore in Mar'20 to Rs. 853.70 crore in Mar'24.</li>
+                    </ul>
+                    <p>These conclusions highlight Nykaa's strong financial performance, marked by consistent asset growth, increasing capital, and efficient debt management.</p>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Financial-Ratio.png" alt="Nykaa Financial Ratio Report">
+                    <p>Based on the Financial Ratio Report, here are some key conclusions and insights you can include in your report summary:</p>
+                    <h4>Profitability Ratios</h4>
+                    <ul>
+                        <li>Nykaa's profitability ratios have shown improvement over the years, with "Operating Profit Margin(%)" increasing from 4.58 in Mar'20 to 5.42 in Mar'24.</li>
+                        <li>The company's "Net Profit Margin(%)" has also shown a positive trend, increasing from -0.93 in Mar'20 to 0.50 in Mar'24.</li>
+                        <li>"Return On Net Worth(%)" has increased from -5.33 in Mar'20 to 2.55 in Mar'24, indicating better utilization of shareholder's funds.</li>
+                    </ul>
+                    <h4>Liquidity and Solvency Ratios</h4>
+                    <ul>
+                        <li>Nykaa's "Current Ratio" has improved from 0.83 in Mar'20 to 0.95 in Mar'24, indicating better short-term liquidity.</li>
+                        <li>The company's "Quick Ratio" has also shown a positive trend, increasing from 0.74 in Mar'20 to 0.84 in Mar'24.</li>
+                        <li>"Debt Equity Ratio" has decreased from 0.86 in Mar'20 to 0.54 in Mar'24, indicating lower reliance on debt financing.</li>
+                    </ul>
+                    <h4>Management Efficiency Ratios</h4>
+                    <ul>
+                        <li>Nykaa's "Inventory Turnover Ratio" has improved from 3.97 in Mar'20 to 5.36 in Mar'24, indicating better inventory management.</li>
+                        <li>The company's "Debtors Turnover Ratio" has increased from 22.61 in Mar'20 to 31.52 in Mar'24, indicating efficient collection of receivables.</li>
+                    </ul>
+                    <p>These conclusions highlight Nykaa's strong financial performance, marked by improving profitability, better liquidity, lower debt reliance, and efficient management of inventory and receivables.</p>
+                </div>
+
+                <h3>Project Outcome</h3>
+                <p>The Nykaa Financial Performance Dashboard provides users with a comprehensive and interactive tool to:</p>
+                <ul>
+                    <li>Gain a deep understanding of Nykaa's financial health and performance.</li>
+                    <li>Identify trends and patterns in key financial metrics.</li>
+                    <li>Assess the company's profitability, liquidity, and efficiency.</li>
+                    <li>Analyze cash flow dynamics and financing strategies.</li>
+                    <li>Make more informed decisions based on data-driven insights.</li>
+                </ul>
+
+                <ul class="actions special">
+                    <li><a href="#" class="button large">View Project on GitHub</a></li>
+                </ul>
+            </section>
+
+        </div>
+
+        <footer id="footer">
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Location</h3>
+                    <p>India,New Delhi</p>
+                </section>
+
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="#">aggarwal3110@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Linkedin</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <div id="copyright">
+            <ul><li>&copy; Sagar Aggarwal</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

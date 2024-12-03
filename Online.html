@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>N Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <div id="wrapper">
+
+        <header id="header">
+            <a href="index.html" class="logo">Sagar Aggarwal</a>
+        </header>
+
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Projects</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+
+            <section class="post">
+                <header class="major">
+                    <h2>Online Food Delivery Dashboard</h2>
+                </header>
+
+                <h3>Introduction</h3>
+                <ul>
+                    <li><b>Project Goal:</b>To provide a data-driven overview of the online food delivery service's performance, focusing on key metrics such as order volume, delivery efficiency, customer demographics, popular cuisines, and overall business growth.</li>
+                    <li><b>Target Audience:</b>Primarily the Operational Manager of the online food delivery service. The dashboard will also be valuable for other stakeholders, including restaurant partners, delivery partners, and the marketing team.</li>
+                </ul>
+
+                <h3>Empathy Map</h3>
+                <ul>
+                    <h4>Pains</h4>
+                    <li>High delivery times</li>
+                    <li>Low order accuracy</li>
+                    <li>Delivery partner shortages</li>
+                    <li>Customer complaints</li>
+                    <li>Technical glitches</li>
+                    <li>Inefficient processes</li>
+                    <li>Lack of real-time visibility</li>
+                </ul>
+
+                <ul>
+                    <h4>Gains</h4>
+                    <li>Optimized delivery routes</li>
+                    <li>Improved order accuracy</li>
+                    <li>Increased customer satisfaction</li>
+                    <li>Reduced operational costs</li>
+                    <li>Efficient delivery network</li>
+                    <li>Motivated delivery partners</li>
+                    <li>Streamlined processes</li>
+                </ul>
+
+                <h3>Technical Details</h3>
+                <ul>
+                    <li><b>Data Sources:</b>The data has been generated from ChatGPT</li>
+                    <li><b>Data Transformation:</b> Power Query was used to clean, transform, and prepare the data for analysis.</li>
+                    <li><b>Data Modeling:</b> A star schema data model was created in Power BI Desktop, with relationships established between the fact table (orders) and various dimension tables.</li>
+                    <div class="image main">
+                        <img src="images/Online/Data Modelling.png" alt="Data Modelling of Online Food Delivery">
+                        
+                    </div>
+                    <li><b>DAX Measures:</b> Numerous DAX measures were created to calculate key performance indicators (KPIs), ratios, and trends.</li>
+                    <li><b>Report Design:</b> The Z-pattern layout was used to structure the reports, guiding user attention and creating a clear visual hierarchy.</li>
+                </ul>
+
+                <h3>Visualizations</h3>
+                <p>A variety of visualizations were used to effectively communicate insights:</p>
+                <ul>
+                    <li><b>Cards:</b> Used to display key performance indicators (KPIs) like average delivery time, order completion rate, and customer satisfaction score.</li>
+                    <li><b>Gauge Charts:</b> To visualize the on-time delivery rate and week-over-week changes in delivery times against target ranges.</li>
+                    <li><b>Line Charts:</b> To show trends in order volume, average delivery time, complaint rates, and customer satisfaction over time.</li>
+                    <li><b>Column Charts:</b> Used to compare performance across different periods or categories.</li>
+                    <li><b>Clustered Column Charts:</b> For comparing the performance of different restaurants, analyzing day-by-day comparisons of key metrics, and understanding customer satisfaction across segments.</li>
+                    <li><b>Bar Charts:</b> To display the average customer rating per restaurant.</li>
+                    <li><b>Tables:</b> To provide detailed information about orders, restaurants, customer feedback, and breakdowns of complaints. </li>
+                    <li><b>Tooltips:</b> Advanced tooltips were implemented, including report page tooltips and conditional formatting, to provide more context and insights.</li>
+                </ul>
+
+                <div class="image main">
+                    <img src="images/Online/Daily.png" alt="Daily Operations Report">
+                    <p>"While on-time deliveries showed a strong improvement today, increasing from 33.3% to 73.3%, order completion rate significantly declined from 20% to 13.3%. This drop warrants immediate investigation to identify the root cause.  Despite the same number of active delivery partners, factors such as potential technical issues, restaurant-specific challenges, or increased cancellations could be contributing to the lower completion rate. Average delivery time also saw a slight increase.  Interestingly, there were shifts in the top-performing restaurants, with 'Indigo Deli' replacing 'Barbeque Nation' at the top. Further analysis is needed to understand these changes and optimize operations for improved order fulfillment."</p>
+                    
+                    <h4>Actionable Insights</h4>
+                    <ul>
+                        <li><b>Investigate the order completion rate drop:</b> Analyze order cancellations, restaurant performance, and delivery partner data to pinpoint the cause.</li>
+                        <li><b>Analyze delivery partner performance:</b> Gather more detailed data on individual delivery partners for both days to identify any performance trends or areas for improvement.</li>
+                        <li><b>Monitor customer feedback:</b> Pay close attention to customer reviews and feedback to understand any emerging issues or trends.</li>
+                        <li><b>Continue to track key metrics:</b> Continue monitoring these metrics daily to identify patterns and make data-driven adjustments to improve overall efficiency and customer satisfaction.</li>
+                    </ul>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Online/Weekly.png" alt="Weekly Performance Report">
+                    <p>"This week's performance shows a mixed picture. While we saw an impressive 84.32% increase in weekly revenue compared to the previous week, the high customer churn rate of 44.23% remains a significant concern. Acquiring 30 new customers this week is positive, but we need to focus on improving customer retention.  Analysis reveals a correlation between order volume, average delivery time, and complaint rate, with all three peaking mid-week. This suggests that operational efficiency might be strained during peak order periods, leading to longer delivery times and increased complaints.  Strategies to address these issues could include optimizing delivery routes, improving order fulfillment processes during peak hours, and proactively addressing customer concerns to enhance satisfaction and loyalty."</p>
+                    <h4>Actionable Insights:</h4>
+                    <ul>
+                        <li><b>Investigate Churn:</b> Conduct thorough analysis to understand why customers are churning. Gather feedback, analyze customer segments, and identify areas for improvement in the customer experience.</li>
+                        <li><b>Optimize Delivery Operations:</b> Focus on improving delivery efficiency, especially during peak mid-week periods. This could involve optimizing delivery routes, improving dispatching processes, or incentivizing delivery partners for faster deliveries.</li>
+                        <li><b>Enhance Customer Service:</b> Develop strategies to proactively address customer complaints and improve overall satisfaction. This might include faster response times, more effective complaint resolution, or loyalty programs to encourage repeat business.</li>
+                        <li><b>Review Marketing Strategies:</b> Evaluate your marketing campaigns to ensure they are effectively attracting and retaining customers. Consider targeted promotions or loyalty programs to incentivize repeat business.</li>
+                    </ul>
+                    <p>By focusing on these areas, you can leverage the insights from your weekly performance report to drive improvements and achieve your business goals.</p>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Online/Restaurant.png" alt="Restaurant Performance Report">
+                    <p>"Analysis of restaurant performance reveals that 'La Piazza' and 'Saravana Bhavan' are top performers in terms of both order volume and revenue. North Indian and Italian cuisines generate the highest revenue, indicating their popularity among our customer base. However, restaurants like 'Zaffran' and 'Bukhara' have significantly lower order volumes, warranting further investigation into potential causes. We recommend conducting a detailed analysis of underperforming restaurants, exploring targeted marketing campaigns, and potentially optimizing menus based on data-driven insights to improve overall performance and revenue."</p>
+                    
+                    <h4>Actionable Insights</h4>
+                    <ul>
+                        <li><b>Investigate Underperforming Restaurants:</b> Analyze the reasons behind the low order volume for restaurants like "Zaffran", "Bukhara", etc. This could involve customer surveys, reviews analysis, and operational assessments.</li>
+                        <li><b>Analyze Cuisine Performance:</b> Investigate the performance of different cuisine types beyond just revenue. Look at metrics like order volume, average order value, and customer satisfaction for each cuisine.</li>
+                        <li><b>Customer Segmentation:</b> Analyze restaurant preferences and revenue contributions across different customer segments (e.g., age, location, order frequency).</li>
+                        <li><b>Marketing and Promotions:</b> Explore targeted marketing and promotional campaigns for underperforming restaurants or specific cuisines to boost their visibility and attract more customers.</li>
+                        <li><b>Menu Optimization:</b> Analyze the menus of top-performing restaurants to identify popular items and trends. Consider recommending menu adjustments for underperforming restaurants based on data-driven insights.</li>
+                    </ul>
+                    <p>By focusing on these areas, you can leverage the insights from your restaurant performance and revenue report to drive data-driven decisions and improve your business outcomes.</p>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Online/Customer.png" alt="Customer Satisfaction Report">
+                    <p>"While we actively collect customer feedback (6000 feedbacks received), the relatively high complaint rate (26.3%) and negative feedback rate (41%) indicate areas for improvement.  Analyzing the "CSAT Months" chart reveals fluctuations in satisfaction over time, warranting further investigation into potential influencing factors.  The "CSAT of customer segment" chart suggests similar satisfaction levels across different age groups, but deeper analysis might uncover subtle variations.  Addressing the proportion of "High Risk" customers in the churn risk analysis is crucial for improving customer retention.  We recommend conducting a detailed analysis of complaints, feedback sentiment, and customer segments to identify actionable insights and enhance overall customer satisfaction."</p>
+                    <h4>Actionable Insights</h4>
+                    <ul>
+                        <li><b>Complaint Analysis:</b> Dive deeper into the complaints to categorize them (e.g., delivery issues, food quality, customer service). This will help you identify areas for improvement.</li>
+                        <li><b>Feedback Sentiment Analysis:</b> Analyze the text comments in the feedback to understand customer sentiment and identify recurring themes.</li>
+                        <li><b>Customer Segmentation:</b> Analyze satisfaction across different customer segments beyond age, such as location, order frequency, or preferred cuisine.</li>
+                        <li><b>Correlation with Operational Data:</b> Correlate customer satisfaction data with operational data (e.g., delivery times, order accuracy, restaurant performance) to identify potential operational bottlenecks impacting satisfaction.</li>
+                    </ul>
+                    <p>By focusing on these areas, you can leverage the insights from your customer satisfaction report to drive improvements and create a better customer experience.</p>
+                </div>
+
+                <h3>Project Outcome</h3>
+                <ul>
+                    <li>The data analysis and visualizations provide valuable insights into the online food delivery service's performance</li>
+                    <li>The report offers a user-friendly interface for monitoring key metrics and identifying areas for improvement.</li>
+                    <li>The project empowers the Operational Manager and other stakeholders to make data-driven decisions to optimize operations, enhance customer satisfaction, and drive business growth.</li>
+                </ul>
+
+                <ul class="actions special">
+                    <li><a href="#" class="button large">View Project on GitHub</a></li>
+                </ul>
+            </section>
+
+        </div>
+
+        <footer id="footer">
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Location</h3>
+                    <p>India,New Delhi</p>
+                </section>
+
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="#">aggarwal3110@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Linkedin</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <div id="copyright">
+            <ul><li>&copy; Sagar Aggarwal</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

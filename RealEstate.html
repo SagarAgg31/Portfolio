@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>N Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <div id="wrapper">
+
+        <header id="header">
+            <a href="index.html" class="logo">Sagar Aggarwal</a>
+        </header>
+
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Projects</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+
+            <section class="post">
+                <header class="major">
+                    <h2>Real Estate Sales Performance Report</h2>
+                </header>
+
+                <h3>Introduction</h3>
+                <ul>
+                    <li><b>Project Goal:</b>To track and analyze the sales performance of real estate teams and individual agents, providing insights into lead generation, conversion rates, sales trends, and overall team productivity.</li>
+                    <li><b>Target Audience:</b>Real estate team leaders and sales managers. The report may also be useful for individual agents, brokers, and other stakeholders in the real estate business.</li>
+                </ul>
+
+                <h3>Empathy Map</h3>
+                <ul>
+                    <h4>Pains</h4>
+                    <li>Lack of visibility into individual agent performance.</li>
+                    <li>Difficulty identifying areas for improvement.</li>
+                    <li>Time-consuming manual reporting.</li>
+                    <li>Inconsistent data across different systems.</li>
+                    <li>Keeping up with agent needs and concerns.</li>
+                </ul>
+
+                <ul>
+                    <h4>Gains</h4>
+                    <li>Increased team productivity and sales.</li>
+                    <li>Improved agent morale and retention.</li>
+                    <li>Data-driven insights for better decision-making.</li>
+                    <li>Efficient performance tracking and reporting.</li>
+                    <li>Streamlined communication and collaboration.</li>
+                </ul>
+
+                <h3>Technical Details</h3>
+                <ul>
+                    <li><b>Data Sources:</b>The data has been generated from ChatGPT</li>
+                    <li><b>Data Transformation:</b> Power Query was used to clean, transform, and prepare the data for analysis.</li>
+                    <li><b>Data Modeling:</b> A star schema data model was created in Power BI Desktop, with relationships established between the fact table (sales) and various dimension tables.</li>
+                    <div class="image main">
+                        <img src="images/Real/Real Data Modelling.png" alt="Data Modelling of Online Food Delivery">
+                        
+                    </div>
+                    <li><b>DAX Measures:</b> Numerous DAX measures were created to calculate key performance indicators (KPIs), ratios, and trends.</li>
+                    <li><b>Report Design:</b> The Z-pattern layout was used to structure the reports, guiding user attention and creating a clear visual hierarchy.</li>
+                </ul>
+
+                <h3>Visualizations</h3>
+                <p>A variety of visualizations were used to effectively communicate insights:</p>
+                <ul>
+                    <li><b>Cards:</b> To display key performance indicators (KPIs) such as total sales, lead conversion rate, and top-performing agents.</li>
+                    <li><b>Gauge Charts:</b> To visualize sales trends over time, track lead generation, and monitor changes in average selling prices.</li>
+                    <li><b>Line Charts:</b> To compare the performance of different agents or teams, analyze sales by property type, or visualize lead conversion rates by source.</li>
+                    <li><b>Column Charts:</b> Used to compare performance across different periods or categories.</li>
+                    <li><b>Clustered Column Charts:</b> For comparing the performance of different restaurants, analyzing day-by-day comparisons of key metrics, and understanding customer satisfaction across segments.</li>
+                    <li><b>Funnel Charts:</b> To visualize the lead conversion process and identify potential bottlenecks.</li>
+                    <li><b>Tables:</b> To provide detailed information about sales transactions, agent performance, or lead status, allowing for sorting and filtering.</li>
+                    <li><b>Tooltips:</b> Advanced tooltips were implemented, including report page tooltips and conditional formatting, to provide more context and insights.</li>
+                </ul>
+
+                <div class="image main">
+                    <img src="images/Real/Main.png" alt="Main Overview Report">
+                    <p>This report presents a comprehensive overview of the performance of your real estate brokerage. It covers key metrics such as total revenue, lead conversion rates, sales volume trends, and commission analysis.</p>
+                    <h4>Overall Performance</h4>
+                    <ul>
+                        <li>The brokerage generated a total revenue of $183,532,423.53.</li>
+                        <li>The sales volume trend shows a peak in 2023, with a slight decline projected for 2024 and 2025.</li>
+                        <li>The lead conversion rate stands at 20.25%, indicating that one in five leads is successfully converted into a sale.</li>
+                    </ul>
+                    <h4>Team Performance</h4>
+                    <ul>
+                        <li>Team B is the top performer in terms of total revenue, while Team D shows the lowest.</li>
+                        <li>The average sale price and commission are relatively consistent across all teams.</li>
+                        <li>All teams demonstrate lead conversion rates close to the overall rate of 20.25%.</li>
+                    </ul>
+                    <h4>Actionable Insights</h4>
+                    <ul>
+                        <li>Further investigate the factors contributing to the projected decline in sales volume.</li>
+                        <li>Analyze the strategies employed by Team B to understand their superior performance.</li>
+                        <li>Identify areas for improvement in Team D's performance.</li>
+                        <li>Explore ways to enhance the lead conversion rates across all teams.</li>
+                    </ul>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Real/Team.png" alt="Team Performance Report">
+                    <p>This report provides a detailed analysis of Team B's performance, highlighting key metrics and trends.</p>
+                    <h4>Key Performance Indicators</h4>
+                    <ul>
+                        <li><b>Team Sales Volume:</b> $64 million (This is a strong performance, likely placing them among the top-performing teams).</li>
+                        <li><b>Lead Conversion Rate:</b> 20.37% (Slightly above the overall average, indicating efficiency in converting leads to sales).</li>
+                        <li><b>Average Deal Size:</b> $40,000 (Provides context to the sales volume. A higher average deal size can contribute to increased revenue).</li>
+                    </ul>
+                    <h4>Sales Volume Comparison</h4>
+                    <ul>
+                        <li>Team B leads in sales volume, followed by Team E and Team C. This suggests that Team B has effective sales strategies and/or a strong client base.</li>
+                    </ul>
+                    <h4>Lead Conversion Rate and Deal Size by Lead Source</h4>
+                    <ul>
+                        <li><b>Email Campaign:</b> While Team A has the highest lead conversion rate (22.01%) from email campaigns, Team B generates the highest sales volume ($136,664,090) from this source. This could indicate that Team B attracts higher-value clients through email campaigns.</li>
+                        <li><b>Open House:</b> Team C excels in lead conversion (22.25%) from open houses. However, Team B again leads in sales volume ($136,664,903), suggesting they effectively leverage open houses to close deals.</li>
+                        <li><b>Referral:</b> Team A has the highest conversion rate for referrals (21.75%), but Team B maintains the highest sales volume ($136,664,090).</li>
+                    </ul>
+                    <p>Overall, Team B demonstrates strong performance across various metrics. Their ability to generate high sales volumes, despite not always having the highest lead conversion rates, suggests they are successful in securing and closing larger deals.</p>
+                    <h4>Actionable Insights</h4>
+                    <ul>
+                        <li>Investigate the strategies employed by Team B in email campaigns and open houses to understand their success in generating high sales volumes.</li>
+                        <li>Share best practices from Team B with other teams to improve their performance.</li>
+                        <li>Continue monitoring Team B's performance to identify areas for further improvement and maintain their strong results.</li>
+                    </ul>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Real/Individual.png" alt="Individual Agents Performance Report">
+                    <p>This report provides insights into the performance of your agents based on key metrics including YTD commission, sales volume, average deal size, number of sales, average days to close, and average list to sale price ratio.</p>
+                    <h4>Top Performers</h4>
+                    <ul>
+                        <li>Andrea Franco leads in YTD commission, followed by Sandra Walker and Brenda Simon.</li>
+                        <li>These agents have demonstrated exceptional performance in generating revenue for the brokerage.</li>
+                    </ul>
+                    <h4>Sales Performance</h4>
+                    <ul>
+                        <li>The agents with the highest sales volume and number of sales also tend to have higher average deal sizes.</li>
+                        <li>This suggests that these agents are effective at closing larger deals, contributing to their higher sales volume.</li>
+                    </ul>
+                    <h4>Efficiency</h4>
+                    <ul>
+                        <li>The average days to close a deal varies across agents, indicating differences in their efficiency in closing deals.</li>
+                        <li>The average list to sale price ratio reflects the negotiation skills of agents, with lower ratios indicating better negotiation outcomes.</li>
+                    </ul>
+                    <h4>Actionable Insights</h4>
+                    <ul>
+                        <li>Recognize and reward the top-performing agents to maintain their motivation and high performance.</li>
+                        <li>Provide additional support to agents with lower sales volume and number of sales to improve their performance.</li>
+                        <li>Analyze the strategies employed by efficient agents with shorter average days to close deals and share best practices with others.</li>
+                        <li>Encourage agents to negotiate effectively to achieve better list to sale price ratios.</li>
+                    </ul>
+                </div>
+
+                <div class="image main">
+                    <img src="images/Real/Lead.png" alt="Lead Analysis Report">
+                    <p>This report provides an overview of lead generation and conversion performance, analyzing trends, sources, and team contributions.</p>
+                    <h4>Lead Conversion Funnel</h4>
+                    <ul>
+                        <li>The conversion funnel shows a healthy flow from new leads to qualified and closed leads.</li>
+                        <li>However, a significant portion of leads are lost, indicating potential for improvement in lead nurturing and qualification.</li>
+                    </ul>
+                    <h4>Lead Sources</h4>
+                    <ul>
+                        <li>The majority of leads originate from email campaigns, followed by open houses and referrals.</li>
+                        <li>Social media and website contributions are relatively smaller, suggesting opportunities to explore these channels further.</li>
+                    </ul>
+                    <h4>Trend of Lead Conversion Rate Over Time</h4>
+                    <ul>
+                        <li>The conversion rate fluctuates throughout the year, with peaks in March and August.</li>
+                        <li>This suggests seasonality in lead generation or conversion, which warrants further investigation.</li>
+                    </ul>
+                    <h4>Team Performance</h4>
+                    <ul>
+                        <li>Team C generates the highest number of leads, followed by Team E and Team B.</li>
+                        <li>This highlights the effectiveness of Team C's lead generation strategies.</li>
+                    </ul>
+                    <h4>Actionable Insights</h4>
+                    <ul>
+                        <li>Analyze the reasons for lead loss to identify areas for improvement in lead nurturing and qualification.</li>
+                        <li>Explore strategies to increase lead generation from social media and website channels.</li>
+                        <li>Investigate the seasonality in lead conversion rates to optimize campaigns and resource allocation.</li>
+                        <li>Share best practices from Team C with other teams to enhance overall lead generation efforts.</li>
+                    </ul>
+                </div>
+
+                <h3>Project Outcome</h3>
+                <ul>
+                    <li>The data analysis and visualizations provide valuable insights into the real estate team's sales performance.</li>
+                    <li>The report offers a user-friendly interface for monitoring key metrics and identifying areas for improvement.</li>
+                    <li>The project empowers the Team Leader and other stakeholders to make data-driven decisions to optimize sales strategies, enhance agent effectiveness, and drive business growth.</li>
+                </ul>
+
+                <ul class="actions special">
+                    <li><a href="#" class="button large">View Project on GitHub</a></li>
+                </ul>
+            </section>
+
+        </div>
+
+        <footer id="footer">
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Location</h3>
+                    <p>India,New Delhi</p>
+                </section>
+
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="#">aggarwal3110@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Linkedin</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <div id="copyright">
+            <ul><li>&copy; Sagar Aggarwal</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
